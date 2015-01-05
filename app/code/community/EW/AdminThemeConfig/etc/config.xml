@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <EW_AdminThemeConfig>
+            <version>1.0.0</version>
+        </EW_AdminThemeConfig>
+    </modules>
+    <global>
+        <helpers>
+            <ew_adminthemeconfig>
+                <class>EW_AdminThemeConfig_Helper</class>
+            </ew_adminthemeconfig>
+        </helpers>
+        <models>
+            <ew_adminthemeconfig>
+                <class>EW_AdminThemeConfig_Model</class>
+            </ew_adminthemeconfig>
+        </models>
+
+        <events>
+            <adminhtml_controller_action_predispatch_start>
+                <observers>
+                    <ew_adminthemeconfig>
+                        <class>ew_adminthemeconfig/observer</class>
+                        <method>useConfigAdminTheme</method>
+                    </ew_adminthemeconfig>
+                </observers>
+            </adminhtml_controller_action_predispatch_start>
+        </events>
+    </global>
+</config>

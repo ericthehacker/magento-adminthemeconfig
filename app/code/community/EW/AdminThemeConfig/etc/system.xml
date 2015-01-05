@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<config>
+    <sections>
+
+        <design>
+            <groups>
+                <package>
+                    <fields>
+                        <admin_name translate="label comment">
+                            <label>Admin Package Name</label>
+                            <comment>
+                                If set, this package in the adminhtml area will be used instead of the default.
+                                Leave blank for default behavior.
+                            </comment>
+                            <config_path>design/package/admin_name</config_path>
+                            <frontend_type>text</frontend_type>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <sort_order>100</sort_order>
+                        </admin_name>
+                    </fields>
+                </package>
+                <theme>
+                    <fields>
+                        <admin_default translate="label comment">
+                            <label>Admin Theme</label>
+                            <comment>
+                                If set, this theme in the adminhtml area will be used instead of the default.
+                                Leave blank for default behavior.
+                            </comment>
+                            <config_path>design/theme/admin_default</config_path>
+                            <frontend_type>text</frontend_type>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <sort_order>100</sort_order>
+                        </admin_default>
+                    </fields>
+                </theme>
+            </groups>
+        </design>
+
+    </sections>
+</config>
